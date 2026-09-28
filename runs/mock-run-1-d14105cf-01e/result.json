@@ -1,0 +1,352 @@
+{
+  "task_id": "d14105cf-01e",
+  "current_phase": "finalize",
+  "revision_count": 0,
+  "selected_agents": [
+    "home",
+    "courses",
+    "about",
+    "pricing",
+    "contact",
+    "faq"
+  ],
+  "error": null,
+  "quality_decision": {
+    "disposition": "approve",
+    "rationale": "All domain agents passed QA; confidence thresholds satisfied (domain >= 0.75, qa_avg >= 0.80).",
+    "quality_score": 0.92,
+    "cross_agent_conflicts": [],
+    "required_actions": [],
+    "revision_count_at_decision": 0
+  },
+  "domain_outputs": {
+    "home": {
+      "agent_id": "home",
+      "content": "[HOME | Home page \u2014 hero, value prop, CTAs for Amigo 21 English] PAGE DRAFT\nGoal: Build Amigo 21 English marketing website page drafts for home, courses/tracks, about, pricing (informational/nonproduction only), contact (document existing POST /api/contact \u2014 do not call it), and FAQ. Emit structured page content for the sheer-test pipeline repo; do not deploy, push, or touch Webflow/Cloud SQL/payments/live services.\n\n# Home \u2014 Amigo 21 English\nHero: English for Portuguese-speaking learners (EN + PT-BR).\nValue: twelve courses across three tracks; placement-aware enrollment.\nCTAs: Explore Courses | See Pricing (informational) | Contact Us.\nCanonical domain target: amigo21english.com (marketing site pipeline).\n",
+      "confidence": 0.78,
+      "confidence_justification": "Solid initial coverage of the main dimensions, but evidence is still thin and cross-agent consistency has not been checked.",
+      "tools_used": [
+        "llm_draft"
+      ],
+      "metadata": {
+        "specialty": "Home page \u2014 hero, value prop, CTAs for Amigo 21 English",
+        "revision": 0,
+        "mode": "draft",
+        "had_feedback": false,
+        "residual_risks": [
+          "Limited primary sources",
+          "Possible inconsistency with peer agents"
+        ]
+      }
+    },
+    "courses": {
+      "agent_id": "courses",
+      "content": "[COURSES | Courses/Tracks page \u2014 12 courses across 3 tracks] PAGE DRAFT\nGoal: Build Amigo 21 English marketing website page drafts for home, courses/tracks, about, pricing (informational/nonproduction only), contact (document existing POST /api/contact \u2014 do not call it), and FAQ. Emit structured page content for the sheer-test pipeline repo; do not deploy, push, or touch Webflow/Cloud SQL/payments/live services.\n\n# Courses / Tracks \u2014 Amigo 21 English\nTrack 1: Beginner I/II, Elementary I/II, Intermediate I/II, Advanced I/II.\nTrack 2: Professional English I/II.\nTrack 3: Driver's Exam English I/II (not affiliated with NJ MVC).\nFormat: eight-week courses, 50-minute lessons.\nPlacement: only 'Track 1 \u2014 Course 1: Beginner I' is exempt; all other valid selections open the teacher-guided placement experience.\n",
+      "confidence": 0.78,
+      "confidence_justification": "Solid initial coverage of the main dimensions, but evidence is still thin and cross-agent consistency has not been checked.",
+      "tools_used": [
+        "llm_draft"
+      ],
+      "metadata": {
+        "specialty": "Courses/Tracks page \u2014 12 courses across 3 tracks",
+        "revision": 0,
+        "mode": "draft",
+        "had_feedback": false,
+        "residual_risks": [
+          "Limited primary sources",
+          "Possible inconsistency with peer agents"
+        ]
+      }
+    },
+    "about": {
+      "agent_id": "about",
+      "content": "[ABOUT | About page \u2014 school mission and bilingual offering] PAGE DRAFT\nGoal: Build Amigo 21 English marketing website page drafts for home, courses/tracks, about, pricing (informational/nonproduction only), contact (document existing POST /api/contact \u2014 do not call it), and FAQ. Emit structured page content for the sheer-test pipeline repo; do not deploy, push, or touch Webflow/Cloud SQL/payments/live services.\n\n# About \u2014 Amigo 21 English\nMission: bilingual public website for Portuguese-speaking learners seeking practical English instruction.\nOffering: business contact links, course summaries, inquiry and placement entrypoints. Public pages summarize teaching resources; they do not publish private lesson plans or teacher answer keys.\n",
+      "confidence": 0.78,
+      "confidence_justification": "Solid initial coverage of the main dimensions, but evidence is still thin and cross-agent consistency has not been checked.",
+      "tools_used": [
+        "llm_draft"
+      ],
+      "metadata": {
+        "specialty": "About page \u2014 school mission and bilingual offering",
+        "revision": 0,
+        "mode": "draft",
+        "had_feedback": false,
+        "residual_risks": [
+          "Limited primary sources",
+          "Possible inconsistency with peer agents"
+        ]
+      }
+    },
+    "pricing": {
+      "agent_id": "pricing",
+      "content": "[PRICING | Pricing page \u2014 informational tuition matrix (NONPRODUCTION only; not a live checkout)] PAGE DRAFT\nGoal: Build Amigo 21 English marketing website page drafts for home, courses/tracks, about, pricing (informational/nonproduction only), contact (document existing POST /api/contact \u2014 do not call it), and FAQ. Emit structured page content for the sheer-test pipeline repo; do not deploy, push, or touch Webflow/Cloud SQL/payments/live services.\n\n# Pricing \u2014 Amigo 21 English (NONPRODUCTION / informational only)\nWARNING: This page shows informational tuition only. It is NOT a live checkout catalog. Payments remain strictly nonproduction.\nMatrix (USD Basic / Complete / Plus):\n- Beginner I/II: 149 / 199 / 249\n- Elementary I/II: 210 / 249 / 299\n- Intermediate I/II: 249 / 279 / 329\n- Advanced I/II: 299 / 329 / 399\n- Professional English I/II: 349 / 419 / 499\n- Driver's Exam English I/II: 499 / 529 / 599\nDo not initiate payment provider calls from this pipeline mock.\n",
+      "confidence": 0.78,
+      "confidence_justification": "Solid initial coverage of the main dimensions, but evidence is still thin and cross-agent consistency has not been checked.",
+      "tools_used": [
+        "llm_draft"
+      ],
+      "metadata": {
+        "specialty": "Pricing page \u2014 informational tuition matrix (NONPRODUCTION only; not a live checkout)",
+        "revision": 0,
+        "mode": "draft",
+        "had_feedback": false,
+        "residual_risks": [
+          "Limited primary sources",
+          "Possible inconsistency with peer agents"
+        ]
+      }
+    },
+    "contact": {
+      "agent_id": "contact",
+      "content": "[CONTACT | Contact page \u2014 inquiry form documenting existing POST /api/contact (no real call in mock)] PAGE DRAFT\nGoal: Build Amigo 21 English marketing website page drafts for home, courses/tracks, about, pricing (informational/nonproduction only), contact (document existing POST /api/contact \u2014 do not call it), and FAQ. Emit structured page content for the sheer-test pipeline repo; do not deploy, push, or touch Webflow/Cloud SQL/payments/live services.\n\n# Contact \u2014 Amigo 21 English\nInquiry form fields: firstName, lastName, email, phone (optional), lessonInterest, message, hidden website honeypot.\nRequired: firstName, lastName, email, valid course interest, message.\nFrontend contract: POST to existing production backend https://amigo21website-7doj6ahycq-ue.a.run.app/api/contact (also reachable as relative /api/contact on the Node app).\nMOCK MODE: document the contract only \u2014 do NOT perform a real POST.\nHealth: GET; CORS: OPTIONS. Honeypot returns success-like without insert.\n",
+      "confidence": 0.78,
+      "confidence_justification": "Solid initial coverage of the main dimensions, but evidence is still thin and cross-agent consistency has not been checked.",
+      "tools_used": [
+        "llm_draft"
+      ],
+      "metadata": {
+        "specialty": "Contact page \u2014 inquiry form documenting existing POST /api/contact (no real call in mock)",
+        "revision": 0,
+        "mode": "draft",
+        "had_feedback": false,
+        "residual_risks": [
+          "Limited primary sources",
+          "Possible inconsistency with peer agents"
+        ]
+      }
+    },
+    "faq": {
+      "agent_id": "faq",
+      "content": "[FAQ | FAQ page \u2014 common learner questions] PAGE DRAFT\nGoal: Build Amigo 21 English marketing website page drafts for home, courses/tracks, about, pricing (informational/nonproduction only), contact (document existing POST /api/contact \u2014 do not call it), and FAQ. Emit structured page content for the sheer-test pipeline repo; do not deploy, push, or touch Webflow/Cloud SQL/payments/live services.\n\n# FAQ \u2014 Amigo 21 English\nQ: How many courses? A: Twelve courses across three tracks.\nQ: Lesson length? A: 50-minute lessons over eight weeks.\nQ: Placement test? A: Required except Beginner I exemption.\nQ: Languages? A: English and Brazilian Portuguese experiences.\nQ: Payments live? A: Public marketing site is informational; payments stay in nonproduction sandboxes.\nQ: Contact? A: Use the Contact form (POST /api/contact backend).\n",
+      "confidence": 0.78,
+      "confidence_justification": "Solid initial coverage of the main dimensions, but evidence is still thin and cross-agent consistency has not been checked.",
+      "tools_used": [
+        "llm_draft"
+      ],
+      "metadata": {
+        "specialty": "FAQ page \u2014 common learner questions",
+        "revision": 0,
+        "mode": "draft",
+        "had_feedback": false,
+        "residual_risks": [
+          "Limited primary sources",
+          "Possible inconsistency with peer agents"
+        ]
+      }
+    }
+  },
+  "qa_reports": [
+    {
+      "agent_id": "about",
+      "verdict": "pass",
+      "severity": "none",
+      "confidence": 0.88,
+      "issues": [],
+      "summary": "QA critique for about: pass (0 issues)",
+      "raw_critique": null
+    },
+    {
+      "agent_id": "contact",
+      "verdict": "pass",
+      "severity": "none",
+      "confidence": 0.88,
+      "issues": [],
+      "summary": "QA critique for contact: pass (0 issues)",
+      "raw_critique": null
+    },
+    {
+      "agent_id": "courses",
+      "verdict": "pass",
+      "severity": "none",
+      "confidence": 0.88,
+      "issues": [],
+      "summary": "QA critique for courses: pass (0 issues)",
+      "raw_critique": null
+    },
+    {
+      "agent_id": "faq",
+      "verdict": "pass",
+      "severity": "none",
+      "confidence": 0.88,
+      "issues": [],
+      "summary": "QA critique for faq: pass (0 issues)",
+      "raw_critique": null
+    },
+    {
+      "agent_id": "home",
+      "verdict": "pass",
+      "severity": "none",
+      "confidence": 0.88,
+      "issues": [],
+      "summary": "QA critique for home: pass (0 issues)",
+      "raw_critique": null
+    },
+    {
+      "agent_id": "pricing",
+      "verdict": "pass",
+      "severity": "none",
+      "confidence": 0.88,
+      "issues": [],
+      "summary": "QA critique for pricing: pass (0 issues)",
+      "raw_critique": null
+    }
+  ],
+  "audit_log": [
+    {
+      "event": "orchestrator_planned",
+      "goal": "Build Amigo 21 English marketing website page drafts for home, courses/tracks, about, pricing (informational/nonproduction only), contact (document existing POST /api/contact \u2014 do not call it), and FAQ. Emit structured page content for the sheer-test pipeline repo; do not deploy, push, or touch Webflow/Cloud SQL/payments/live services.",
+      "revision": 0,
+      "selected_agents": [
+        "home",
+        "courses",
+        "about",
+        "pricing",
+        "contact",
+        "faq"
+      ],
+      "available_agents": [
+        "home",
+        "courses",
+        "about",
+        "pricing",
+        "contact",
+        "faq"
+      ],
+      "routing": "keyword",
+      "rationale": "keyword matching",
+      "actions": []
+    },
+    {
+      "event": "domain_agent_completed",
+      "agent_id": "home",
+      "mode": "draft",
+      "confidence": 0.78,
+      "confidence_justification": "Solid initial coverage of the main dimensions, but evidence is still thin and cross-agent consistency has not been checked.",
+      "residual_risks": [
+        "Limited primary sources",
+        "Possible inconsistency with peer agents"
+      ],
+      "had_feedback": false
+    },
+    {
+      "event": "domain_agent_completed",
+      "agent_id": "courses",
+      "mode": "draft",
+      "confidence": 0.78,
+      "confidence_justification": "Solid initial coverage of the main dimensions, but evidence is still thin and cross-agent consistency has not been checked.",
+      "residual_risks": [
+        "Limited primary sources",
+        "Possible inconsistency with peer agents"
+      ],
+      "had_feedback": false
+    },
+    {
+      "event": "domain_agent_completed",
+      "agent_id": "about",
+      "mode": "draft",
+      "confidence": 0.78,
+      "confidence_justification": "Solid initial coverage of the main dimensions, but evidence is still thin and cross-agent consistency has not been checked.",
+      "residual_risks": [
+        "Limited primary sources",
+        "Possible inconsistency with peer agents"
+      ],
+      "had_feedback": false
+    },
+    {
+      "event": "domain_agent_completed",
+      "agent_id": "pricing",
+      "mode": "draft",
+      "confidence": 0.78,
+      "confidence_justification": "Solid initial coverage of the main dimensions, but evidence is still thin and cross-agent consistency has not been checked.",
+      "residual_risks": [
+        "Limited primary sources",
+        "Possible inconsistency with peer agents"
+      ],
+      "had_feedback": false
+    },
+    {
+      "event": "domain_agent_completed",
+      "agent_id": "contact",
+      "mode": "draft",
+      "confidence": 0.78,
+      "confidence_justification": "Solid initial coverage of the main dimensions, but evidence is still thin and cross-agent consistency has not been checked.",
+      "residual_risks": [
+        "Limited primary sources",
+        "Possible inconsistency with peer agents"
+      ],
+      "had_feedback": false
+    },
+    {
+      "event": "domain_agent_completed",
+      "agent_id": "faq",
+      "mode": "draft",
+      "confidence": 0.78,
+      "confidence_justification": "Solid initial coverage of the main dimensions, but evidence is still thin and cross-agent consistency has not been checked.",
+      "residual_risks": [
+        "Limited primary sources",
+        "Possible inconsistency with peer agents"
+      ],
+      "had_feedback": false
+    },
+    {
+      "event": "qa_agent_completed",
+      "agent_id": "about",
+      "verdict": "pass",
+      "issue_count": 0,
+      "mode": "critique"
+    },
+    {
+      "event": "qa_agent_completed",
+      "agent_id": "contact",
+      "verdict": "pass",
+      "issue_count": 0,
+      "mode": "critique"
+    },
+    {
+      "event": "qa_agent_completed",
+      "agent_id": "courses",
+      "verdict": "pass",
+      "issue_count": 0,
+      "mode": "critique"
+    },
+    {
+      "event": "qa_agent_completed",
+      "agent_id": "faq",
+      "verdict": "pass",
+      "issue_count": 0,
+      "mode": "critique"
+    },
+    {
+      "event": "qa_agent_completed",
+      "agent_id": "home",
+      "verdict": "pass",
+      "issue_count": 0,
+      "mode": "critique"
+    },
+    {
+      "event": "qa_agent_completed",
+      "agent_id": "pricing",
+      "verdict": "pass",
+      "issue_count": 0,
+      "mode": "critique"
+    },
+    {
+      "event": "qa_orchestrator_decision",
+      "disposition": "approve",
+      "quality_score": 0.92,
+      "revision": 0,
+      "conflicts": 0,
+      "low_domain_confidence": [],
+      "avg_qa_confidence": 0.88,
+      "thresholds": {
+        "domain_approve_min": 0.75,
+        "qa_approve_min": 0.8
+      }
+    },
+    {
+      "event": "finalized",
+      "quality_score": 0.92,
+      "disposition": "approve"
+    }
+  ]
+}

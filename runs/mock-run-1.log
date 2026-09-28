@@ -1,0 +1,39 @@
+2026-09-28 09:16:38 | INFO     | agentic_system.run_demo | MOCK E2E starting | log=/workspace/amigo21-pipeline/runs/mock-run-1.log
+2026-09-28 09:16:38 | INFO     | agentic_system.run_demo | Thresholds (unchanged): ConfidenceThresholds(domain_low=0.7, domain_critical=0.5, domain_approve_min=0.75, qa_approve_min=0.8, quality_approve_min=0.85)
+2026-09-28 09:16:38 | INFO     | agentic_system.run_demo | Invoke graph | task_id=d14105cf-01e agents=['home', 'courses', 'about', 'pricing', 'contact', 'faq']
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | Orchestrator starting | task=d14105cf-01e revision=0
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | Orchestrator routing decision | method=keyword selected=['home', 'courses', 'about', 'pricing', 'contact', 'faq'] rationale=keyword matching
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | Domain agent starting | agent=home mode=draft specialty=Home page — hero, value prop, CTAs for Amigo 21 English revision=0 task=d14105cf-01e
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | Domain agent completed | agent=home mode=draft confidence=0.78 justification=Solid initial coverage of the main dimensions, but evidence 
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | Domain agent starting | agent=about mode=draft specialty=About page — school mission and bilingual offering revision=0 task=d14105cf-01e
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | Domain agent starting | agent=pricing mode=draft specialty=Pricing page — informational tuition matrix (NONPRODUCTION only; not a live checkout) revision=0 task=d14105cf-01e
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | Domain agent starting | agent=courses mode=draft specialty=Courses/Tracks page — 12 courses across 3 tracks revision=0 task=d14105cf-01e
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | Domain agent starting | agent=contact mode=draft specialty=Contact page — inquiry form documenting existing POST /api/contact (no real call in mock) revision=0 task=d14105cf-01e
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | Domain agent completed | agent=about mode=draft confidence=0.78 justification=Solid initial coverage of the main dimensions, but evidence 
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | Domain agent starting | agent=faq mode=draft specialty=FAQ page — common learner questions revision=0 task=d14105cf-01e
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | Domain agent completed | agent=pricing mode=draft confidence=0.78 justification=Solid initial coverage of the main dimensions, but evidence 
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | Domain agent completed | agent=courses mode=draft confidence=0.78 justification=Solid initial coverage of the main dimensions, but evidence 
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | Domain agent completed | agent=contact mode=draft confidence=0.78 justification=Solid initial coverage of the main dimensions, but evidence 
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | Domain agent completed | agent=faq mode=draft confidence=0.78 justification=Solid initial coverage of the main dimensions, but evidence 
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | QA agent starting (critique) | agent=pricing task=d14105cf-01e
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | QA agent starting (critique) | agent=about task=d14105cf-01e
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | QA agent starting (critique) | agent=contact task=d14105cf-01e
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | QA agent starting (critique) | agent=faq task=d14105cf-01e
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | QA agent completed (critique) | agent=pricing verdict=pass issues=0
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | QA agent starting (critique) | agent=courses task=d14105cf-01e
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | QA agent completed (critique) | agent=about verdict=pass issues=0
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | QA agent starting (critique) | agent=home task=d14105cf-01e
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | QA agent completed (critique) | agent=contact verdict=pass issues=0
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | QA agent completed (critique) | agent=faq verdict=pass issues=0
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | QA agent completed (critique) | agent=courses verdict=pass issues=0
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | QA agent completed (critique) | agent=home verdict=pass issues=0
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | QA-Orchestrator starting | task=d14105cf-01e
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | QA-Orchestrator decision | disposition=approve score=0.92 revision=0 conflicts=0 low_domain=[] qa_avg=0.88
+2026-09-28 09:16:38 | INFO     | agentic_system.agents | Finalized | disposition=approve score=0.92 task=d14105cf-01e
+2026-09-28 09:16:38 | INFO     | agentic_system.run_demo | MOCK E2E finished | phase=finalize disposition=approve score=0.92 revisions=0
+2026-09-28 09:16:38 | INFO     | agentic_system.run_demo | QA outcome | page=home verdict=pass severity=none issues=0 conf=0.88
+2026-09-28 09:16:38 | INFO     | agentic_system.run_demo | QA outcome | page=courses verdict=pass severity=none issues=0 conf=0.88
+2026-09-28 09:16:38 | INFO     | agentic_system.run_demo | QA outcome | page=about verdict=pass severity=none issues=0 conf=0.88
+2026-09-28 09:16:38 | INFO     | agentic_system.run_demo | QA outcome | page=pricing verdict=pass severity=none issues=0 conf=0.88
+2026-09-28 09:16:38 | INFO     | agentic_system.run_demo | QA outcome | page=contact verdict=pass severity=none issues=0 conf=0.88
+2026-09-28 09:16:38 | INFO     | agentic_system.run_demo | QA outcome | page=faq verdict=pass severity=none issues=0 conf=0.88
